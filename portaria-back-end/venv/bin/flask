@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' /home/colins/Documents/Master_Eletrical_Engineering/CC027_System_Engineering_and_Development/Portaria/portaria-back-end/venv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from flask.cli import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
