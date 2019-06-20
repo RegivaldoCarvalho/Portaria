@@ -185,13 +185,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_uekCwI-XEemI-ZHWCcmzxQ" name="cadastra moradores" type="_53IrgIyMEemhMbkorVojJQ" association="_uejbsI-XEemI-ZHWCcmzxQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_uekCwY-XEemI-ZHWCcmzxQ" name="sindico" type="_Bnjb8I-PEemI-ZHWCcmzxQ" association="_uejbsI-XEemI-ZHWCcmzxQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_2Z13QI-XEemI-ZHWCcmzxQ" memberEnd="_2Z2eUI-XEemI-ZHWCcmzxQ _2Z2eUY-XEemI-ZHWCcmzxQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2Z13QY-XEemI-ZHWCcmzxQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2Z13Qo-XEemI-ZHWCcmzxQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_2Z2eUI-XEemI-ZHWCcmzxQ" name="cadastra visitantes" type="_nOs0sI-VEemI-ZHWCcmzxQ" association="_2Z13QI-XEemI-ZHWCcmzxQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_2Z2eUY-XEemI-ZHWCcmzxQ" name="funcionário " type="_4tfi4IyMEemhMbkorVojJQ" association="_2Z13QI-XEemI-ZHWCcmzxQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_HEvuUI-YEemI-ZHWCcmzxQ" memberEnd="_HExjgI-YEemI-ZHWCcmzxQ _HExjgY-YEemI-ZHWCcmzxQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HEwVYI-YEemI-ZHWCcmzxQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HEwVYY-YEemI-ZHWCcmzxQ" key="nature" value="UML_Nature"/>

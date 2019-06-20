@@ -454,21 +454,6 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ufOKEI-XEemI-ZHWCcmzxQ" id="(0.0,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ufOKEY-XEemI-ZHWCcmzxQ" id="(0.8,0.0)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_2Z9zEI-XEemI-ZHWCcmzxQ" type="Association_Edge" source="_4tlCcIyMEemhMbkorVojJQ" target="_nOwfEI-VEemI-ZHWCcmzxQ">
-      <children xmi:type="notation:DecorationNode" xmi:id="_2Z9zE4-XEemI-ZHWCcmzxQ" type="Association_NameLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_8CoEsI-XEemI-ZHWCcmzxQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2Z9zFI-XEemI-ZHWCcmzxQ" x="2" y="37"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_2Z-aII-XEemI-ZHWCcmzxQ" type="Association_StereotypeLabel">
-        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_8C05AI-XEemI-ZHWCcmzxQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2Z-aIY-XEemI-ZHWCcmzxQ" x="-1" y="-19"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_2Z9zEY-XEemI-ZHWCcmzxQ"/>
-      <element xmi:type="uml:Association" href="Portaria.uml#_2Z13QI-XEemI-ZHWCcmzxQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2Z9zEo-XEemI-ZHWCcmzxQ" points="[500, -140, -643984, -643984]$[260, 140, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2af-kI-XEemI-ZHWCcmzxQ" id="(0.0,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2af-kY-XEemI-ZHWCcmzxQ" id="(0.684931506849315,0.0)"/>
-    </edges>
     <edges xmi:type="notation:Connector" xmi:id="_HE0m0I-YEemI-ZHWCcmzxQ" type="Association_Edge" source="_JNQaUI-VEemI-ZHWCcmzxQ" target="_XJIC0I-WEemI-ZHWCcmzxQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_HE1N4I-YEemI-ZHWCcmzxQ" type="Association_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ONDNwI-YEemI-ZHWCcmzxQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
