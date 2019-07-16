@@ -12,7 +12,7 @@ public class User {
     private String email;
     
     @ManyToMany
-    private Set<Role> roles;
+    private Set<Permissao> roles;
     
     public User(){}
     

@@ -3,11 +3,11 @@ package ufma.mestrado.portaria.entity;
 import javax.persistence.*;
 
 @Entity
-public class Role {
+public class Permissao {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    private String name;
+    private String nome;
        
     public Long getId() {
         return id;
@@ -17,11 +17,11 @@ public class Role {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
