@@ -1,5 +1,6 @@
 package ufma.mestrado.portaria.config;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -10,12 +11,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.file.AccessDeniedException;
-import java.util.logging.Logger;
 
 @Component
 public class LoggingAccessDeniedHandler implements AccessDeniedHandler {
-    private static Logger log = (Logger) LoggerFactory.getLogger(LoggingAccessDeniedHandler.class);
+    private static Logger log = LoggerFactory.getLogger(LoggingAccessDeniedHandler.class);
 
     @Override
     public void handle(HttpServletRequest request,
