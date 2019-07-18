@@ -14,6 +14,6 @@ import org.springframework.data.jpa.repository.Query;
  * @author elias
  */
 public interface FuncionarioRepository extends JpaRepository<Funcionario,Long>{
-    @Query("select a from Apartamento a where a.nome like %?1%")
+    @Query("select a from Funcionario a where a.nome like %?1%")
     Funcionario findByNameLike(String nome);
 }
