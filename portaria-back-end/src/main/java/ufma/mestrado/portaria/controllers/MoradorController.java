@@ -1,7 +1,10 @@
 package ufma.mestrado.portaria.controllers;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import ufma.mestrado.portaria.entity.Morador;
 import ufma.mestrado.portaria.repository.MoradorRepository;
 
@@ -14,6 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 @Controller
 public class MoradorController {
@@ -30,8 +35,10 @@ public class MoradorController {
     }
     
     @PostMapping("/morador")
-    public Morador add(@RequestBody Morador morador) {
-      return this.repository.save(morador);
+    public String add(@Valid Morador morador, BindingResult result, Model model) {
+        model.addAttribute("morador", morador);
+        this.repository.save(morador);
+        return "cadastroMorador";
     }
     
     @PutMapping("/morador/{id}")

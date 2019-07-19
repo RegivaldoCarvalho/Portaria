@@ -2,6 +2,8 @@ package ufma.mestrado.portaria.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import ufma.mestrado.portaria.entity.User;
 import ufma.mestrado.portaria.repository.UserRepository;
 
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 @Controller
 public class UserController {
@@ -30,8 +34,10 @@ public class UserController {
     }
     
     @PostMapping("/user")
-    public User add(@RequestBody User user) {
-      return this.repository.save(user);
+    public String add(@Valid User user, BindingResult result, Model model) {
+        model.addAttribute("user", user);
+        this.repository.save(user);
+        return "user";
     }
     
     @PutMapping("/user/{id}")
