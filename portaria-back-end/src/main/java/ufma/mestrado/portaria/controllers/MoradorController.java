@@ -1,5 +1,7 @@
 package ufma.mestrado.portaria.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import ufma.mestrado.portaria.entity.Morador;
 import ufma.mestrado.portaria.repository.MoradorRepository;
 
@@ -13,10 +15,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class MoradorController {
     private MoradorRepository repository;
-    
+
+    @Autowired
     public MoradorController(MoradorRepository moradorRepository){
         this.repository = moradorRepository;
     }

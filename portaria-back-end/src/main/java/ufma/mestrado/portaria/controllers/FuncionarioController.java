@@ -1,5 +1,10 @@
 package ufma.mestrado.portaria.controllers;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.bind.BindResult;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import ufma.mestrado.portaria.entity.Funcionario;
 import ufma.mestrado.portaria.repository.FuncionarioRepository;
 
@@ -13,10 +18,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+import javax.jws.WebParam;
+import javax.validation.Valid;
+
+@Controller
 public class FuncionarioController {
     private FuncionarioRepository repository;
-    
+
+    @Autowired
     public FuncionarioController(FuncionarioRepository funcionarioRepository){
         this.repository = funcionarioRepository;
     }
@@ -27,8 +36,10 @@ public class FuncionarioController {
     }
     
     @PostMapping("/funcionario")
-    public Funcionario add(@RequestBody Funcionario funcionario) {
-      return this.repository.save(funcionario);
+    public String add(@Valid Funcionario funcionario, BindResult bindResult, Model model) {
+        model.addAttribute(funcionario);
+        this.repository.save(funcionario);
+        return "cadastroFuncionario";
     }
     
     @PutMapping("/funcionario/{id}")

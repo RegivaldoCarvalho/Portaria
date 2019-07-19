@@ -1,5 +1,7 @@
 package ufma.mestrado.portaria.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import ufma.mestrado.portaria.entity.User;
 import ufma.mestrado.portaria.repository.UserRepository;
 
@@ -13,10 +15,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class UserController {
     private UserRepository repository;
-    
+
+    @Autowired
     public UserController(UserRepository userRepository){
         this.repository = userRepository;
     }
