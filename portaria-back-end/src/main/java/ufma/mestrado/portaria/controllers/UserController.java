@@ -27,12 +27,12 @@ public class UserController {
     }
     
     @PostMapping("/user")
-    User add(@RequestBody User user) {
+    public User add(@RequestBody User user) {
       return this.repository.save(user);
     }
     
     @PutMapping("/user/{id}")
-    User replaceEmployee(@RequestBody User userRequest, @PathVariable Long id) {
+    public User replaceEmployee(@RequestBody User userRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(user -> {

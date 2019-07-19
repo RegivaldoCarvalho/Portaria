@@ -27,12 +27,12 @@ public class FuncionarioController {
     }
     
     @PostMapping("/funcionario")
-    Funcionario add(@RequestBody Funcionario funcionario) {
+    public Funcionario add(@RequestBody Funcionario funcionario) {
       return this.repository.save(funcionario);
     }
     
     @PutMapping("/funcionario/{id}")
-    Funcionario update(@RequestBody Funcionario funcionarioRequest, @PathVariable Long id) {
+    public Funcionario update(@RequestBody Funcionario funcionarioRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(funcionario -> {
@@ -47,7 +47,7 @@ public class FuncionarioController {
     }
     
     @DeleteMapping("/funcionario/{id}")
-    void delete(@PathVariable Long id) {
+    public void delete(@PathVariable Long id) {
       repository.deleteById(id);
     }
 }

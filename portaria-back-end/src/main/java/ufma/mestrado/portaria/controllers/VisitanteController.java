@@ -27,12 +27,12 @@ public class VisitanteController {
     }
     
     @PostMapping("/visitante")
-    Visitante add(@RequestBody Visitante visitante) {
+    public Visitante add(@RequestBody Visitante visitante) {
       return this.repository.save(visitante);
     }
     
     @PutMapping("/visitante/{id}")
-    Visitante update(@RequestBody Visitante visitanteRequest, @PathVariable Long id) {
+    public Visitante update(@RequestBody Visitante visitanteRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(visitante -> {

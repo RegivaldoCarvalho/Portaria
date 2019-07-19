@@ -27,12 +27,12 @@ public class CarroController {
     }
     
     @PostMapping("/carro")
-    Carro add(@RequestBody Carro carro) {
+    public Carro add(@RequestBody Carro carro) {
       return this.repository.save(carro);
     }
     
     @PutMapping("/carro/{id}")
-    Carro update(@RequestBody Carro carroRequest, @PathVariable Long id) {
+    public Carro update(@RequestBody Carro carroRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(carro -> {

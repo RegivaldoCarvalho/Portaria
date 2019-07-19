@@ -27,12 +27,12 @@ public class MoradorController {
     }
     
     @PostMapping("/morador")
-    Morador add(@RequestBody Morador morador) {
+    public Morador add(@RequestBody Morador morador) {
       return this.repository.save(morador);
     }
     
     @PutMapping("/morador/{id}")
-    Morador update(@RequestBody Morador moradorRequest, @PathVariable Long id) {
+    public Morador update(@RequestBody Morador moradorRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(morador -> {

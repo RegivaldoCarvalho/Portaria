@@ -27,12 +27,12 @@ public class ApartamentoController {
     }
     
     @PostMapping("/apartamento")
-    Apartamento add(@RequestBody Apartamento apartamento) {
+    public Apartamento add(@RequestBody Apartamento apartamento) {
       return this.repository.save(apartamento);
     }
     
     @PutMapping("/apartamento/{id}")
-    Apartamento replace(@RequestBody Apartamento apartamentoRequest, @PathVariable Long id) {
+    public Apartamento replace(@RequestBody Apartamento apartamentoRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(apartamento -> {
