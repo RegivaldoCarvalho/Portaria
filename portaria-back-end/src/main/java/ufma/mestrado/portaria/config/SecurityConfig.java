@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .and()
 //                .exceptionHandling()
 //                .accessDeniedHandler(accessDeniedHandler);
-        http.authorizeRequests().antMatchers("/**").permitAll();
+        http.authorizeRequests().antMatchers("/resources/**").permitAll();
     }
 
     @Override

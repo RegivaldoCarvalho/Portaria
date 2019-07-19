@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>condominio</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>Home - Condominio</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" href="../static/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.min.css" th:href="@{/css/styles.min.css}">
 </head>
 
 <body>
@@ -34,10 +34,10 @@
         </form>
     </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="../static/js/script.min.js" th:src="@{/js/script.min.js}"></script>
 </body>
 
 </html>

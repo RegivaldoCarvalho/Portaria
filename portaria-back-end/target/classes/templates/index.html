@@ -20,7 +20,7 @@
         	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color: #ffffff;">Log In</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" th:href="@{/login}" style="color: #ffffff;">Log In</a></li>
                 </ul>
             </div>
         </div>
@@ -81,10 +81,10 @@
     <footer class="py-5 bg-black">
         <div class="container"></div>
     </footer>
-    <script src="../static/js/jquery.min.js" th:href="@{/js/jquery.min.js}"></script>
-    <script src="../static/bootstrap/js/bootstrap.min.js" th:href="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="../static/js/script.min.js" th:href="@{/js/script.min.js}"></script>
+    <script src="../static/js/script.min.js" th:src="@{/js/script.min.js}"></script>
 </body>
 
 </html>
