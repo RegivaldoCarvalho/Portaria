@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Condominio</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}" href="../static/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.min.css" th:href="@{/css/styles.min.css}">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="#">Condominio</a>
+        	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" th:href="@{/login}" style="color: #ffffff;">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white">
+        <div class="card-group"></div>
+        <div class="masthead-content">
+            <div class="container" style="padding-left: -44px;"><label class="text-left d-inline" style="font-size: 53px;">Sistema de controle de entrada para&nbsp;<br>condomínios&nbsp;</label><img class="img-fluid d-flex d-xl-flex justify-content-center ml-auto justify-content-xl-end align-items-xl-end"
+                    th:src="@{/img/oie_transparent.png}" data-aos="fade-left" data-aos-duration="100" style="width: 345px;"><img class="img-fluid d-flex d-xl-flex justify-content-center mx-auto justify-content-xl-end align-items-xl-end" th:src="@{/img/oie_transparent.png}" data-aos="fade-left"
+                    data-aos-duration="800" style="width: 345px;"><img class="img-fluid d-flex d-xl-flex justify-content-center ml-auto justify-content-xl-end align-items-xl-end" th:src="@{/img/oie_transparent.png}" data-aos="fade-left" data-aos-duration="2900" style="width: 345px;"></div>
+        </div>
+    </header>
+    <section style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" th:src="@{/img/t1.png}" data-aos="fade-left" data-aos-delay="250"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4" style="font-family: Arapey, serif;font-size: 50px;color: rgb(0,0,0);">Agendamento de visita</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5"><img class="rounded-circle img-fluid" th:src="@{/img/porteiro.png}" data-aos="fade-right" data-aos-delay="150"></div>
+                </div>
+                <div class="col-lg-6 order-lg-2" style="background-color: #ffffff;">
+                    <div class="p-5">
+                        <h2 class="display-4" style="font-family: Alegreya, serif;font-size: 50px;color: rgb(21,21,21);">Segurança</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="rounded-circle img-fluid" th:src="@{/img/morador.png}" data-aos="fade-left" data-aos-delay="400"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4" style="font-family: Alegreya, serif;font-size: 50px;color: rgb(12,13,13);">Conforto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-black">
+        <div class="container"></div>
+    </footer>
+    <script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="../static/js/script.min.js" th:src="@{/js/script.min.js}"></script>
+</body>
+
+</html>
