@@ -1,5 +1,7 @@
 package ufma.mestrado.portaria.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import ufma.mestrado.portaria.entity.Apartamento;
 import ufma.mestrado.portaria.repository.ApartamentoRepository;
 
@@ -13,10 +15,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class ApartamentoController {
     private ApartamentoRepository repository;
-    
+
+    @Autowired
     public ApartamentoController(ApartamentoRepository apartamentoRepository){
         this.repository = apartamentoRepository;
     }
@@ -27,12 +30,12 @@ public class ApartamentoController {
     }
     
     @PostMapping("/apartamento")
-    Apartamento add(@RequestBody Apartamento apartamento) {
+    public Apartamento add(@RequestBody Apartamento apartamento) {
       return this.repository.save(apartamento);
     }
     
     @PutMapping("/apartamento/{id}")
-    Apartamento replace(@RequestBody Apartamento apartamentoRequest, @PathVariable Long id) {
+    public Apartamento replace(@RequestBody Apartamento apartamentoRequest, @PathVariable Long id) {
 
       return repository.findById(id)
         .map(apartamento -> {

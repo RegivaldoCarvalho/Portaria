@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Condominio</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"
+          href="../static/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.min.css" th:href="@{/css/styles.min.css}">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom" th:switch="${permissao}">
+        <div class="container"><a class="navbar-brand" href="index.html">Condominio</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color: #ffffff;">SAIR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" data-aos="fade-left" style="width: 322px;margin-top: 174px;">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Bloco</th>
+                        <th>Apartamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr th:each="permissao : ${permissao}">
+                    <td th:text="${permissao.id}"></td>
+                    <td th:text="${permissao.nome}"></td>
+                    <td th:text="${permissao.bloco}"></td>
+                    <td th:text="${permissao.apartamento}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
